@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project AURA</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h2>Project AURA</h2>
+</header>
+
+<main style="padding:20px">
+
+<h3>📌 Project Overview</h3>
+<p>
+AURA is a smart attendance management system using face recognition and ID verification.
+</p>
+
+<h3>🧰 Technology Stack</h3>
+<ul>
+    <li>ESP32</li>
+    <li>Python</li>
+    <li>OpenCV</li>
+    <li>HTML, CSS, JavaScript</li>
+</ul>
+
+<h3>🔄 Project Flow</h3>
+<ol>
+    <li>ID card is scanned</li>
+    <li>Face structure is verified</li>
+    <li>Attendance is marked</li>
+    <li>Data is visualized for HOD</li>
+</ol>
+
+<h3>✅ Advantages</h3>
+<ul>
+    <li>No proxy attendance</li>
+    <li>Real-time monitoring</li>
+    <li>Secure and accurate</li>
+</ul>
+
+<h3>📊 Attendance Dataset (Sample)</h3>
+<canvas id="attendanceChart" width="400"></canvas>
+
+</main>
+
+<footer>
+    Academic Demonstration | Static View Only
+</footer>
+
+<script>
+const ctx = document.getElementById('attendanceChart');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Present', 'Absent'],
+        datasets: [{
+            label: 'Attendance Stats',
+            data: [75, 25],
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
